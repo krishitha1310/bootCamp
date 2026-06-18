@@ -2,7 +2,8 @@ div {
     text-align: center;
     background-color: lightblue;
 }
-.register-container{
+.register-container,.login-container{
     text-align: center;
     background-color: yellow;
+    
 }

@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="register-container">
         <h1>Register Page</h1>
         <form>
-            <label>Name</label>
-            <input type="text" id="name"> <br>  <br>
-            <label>Email</label>
-            <input type="Email" id="email"> <br>  <br>
-            <label>Password</label>
-            <input type="Password" id="password"> <br>  <br>
-            <label> RePassword</label>
-            <input type="RePassword" id="repassword"> <br>  <br>
+            <label for="exampleFormControlInput1" class="form-label">Name</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="abcdef"><br> <br>
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"><br>
+            <br>
+            <label for="exampleFormControlInput1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="........"><br> <br>
+            <label for="exampleFormControlInput1" class="form-label"> Re Password</label>
+            <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="........"><br> <br>
             <button id="reg-button">Register</button>
             <p>Already have an account?<a href="login.html">Click here to login</a></p>
         </form>
     </div>
     <script src="register.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
 </body>
+
 </html>
