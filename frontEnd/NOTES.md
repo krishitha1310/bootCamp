@@ -49,6 +49,35 @@ const backend=() =>{
 a function is acting like a parameter to the oter function
 **Higher order function**
 a function which is acting as a parameter to the higher order function
+## Array methods
+**ADD/REMOVE METHODS**
+    ->push()---->adds  and returns the modified length
+    ->pop()---->removes the last element and returns the removed length
+    ->shift()---->removes the first elemnt and returns the removed element
+    ->unshift()---->adds the elemnt at first and returns the modified length
+    ->splice()---->splice is used to
+                    ->add elemnts
+                    ->remove elemnys
+                    ->replace elemnts
+                    ->**Syntax**->array_name.splice(startIndex,deleteCount,item1,item2,...)
+                    ->if we want to add elements then the deleteCount should be zero
+
+                    ->if we dont want to add the elemnts then only starting index and deletecount is enough as parameters
+
+**searching methods**
+    ->includes()
+    ->indexOf()  ->returns index of element
+    ->find()  -->returns first matching element
+    ->findIndex()-->
+**iteration methods**
+    ->forEach-->it is used to iterate each elemnt from an array
+    ->map()-->
+    ->filter
+**transformation methods**
+    ->reduce
+    ->sort
+    ->reverse
+
 
 
 

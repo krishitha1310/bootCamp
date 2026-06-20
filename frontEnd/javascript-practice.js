@@ -125,3 +125,129 @@
 
 
 
+
+
+
+//ARRAY METHODS
+
+// const arr=[3,2,12,42,56,[4,52,29]]
+// console.log(arr.push(8))
+// console.log(arr)
+
+// console.log(arr.pop())
+// console.log(arr)
+
+// arr.unshift("krishi")
+// console.log(arr.unshift())
+// console.log(arr)
+
+// arr.shift()
+// console.log(arr.unshift())
+// console.log(arr)
+
+// //deleting elemnt at 2nd index
+// arr.splice(2,1) //starts from 2nd index and removes 1 elemnt
+// console.log(arr)
+
+// arr.splice(0,2,"abc") //starts from 0 index and removes 2 elemnts and replaces them with aelemnts given 
+// console.log(arr)
+// arr.splice(2)  //starts from index 2 and removes every elemnt after 2nd index
+// console.log(arr)
+
+
+
+
+
+
+
+//SEARCHING METHODS
+
+// const arr2=[2,3,"ace"]
+// console.log(arr2.indexOf("ace")) //it returns 2
+// console.log(arr2.indexOf("sk")) //as there is no value it returns -1
+
+
+// const students=[
+//     {
+//         rollNo:"24agg0",
+//         name:"krishi",
+//         dept:"cse"
+//     },{
+//         rollNo:"24age2",
+//         name:"sowmya",
+//         dept:"cse"
+//     },{
+//         rollNo:"24agg3",
+//         name:"bindu",
+//         dept:"cse"
+//     },{
+//         rollNo:"24agi1",
+//         name:"reethu",
+//         dept:"cse"
+//     }
+// ]
+// const studentReport=students.find(
+//     s=>s.rollNo==="24agg0"
+// )
+// console.log(studentReport)
+
+// let index=students.findIndex(
+//     s=>s.rollNo="241gg0"
+// )
+// console.log(index)
+
+
+
+
+
+//ITERATION METHODS
+const students=[
+    {
+        rollNo:"24agg0",
+        name:"krishi",
+        dept:"cse"
+    },{
+        rollNo:"24age2",
+        name:"sowmya",
+        dept:"cse"
+    },{
+        rollNo:"24agg3",
+        name:"bindu",
+        dept:"csm"
+    },{
+        rollNo:"24agi1",
+        name:"reethu",
+        dept:"csm"
+    }
+]
+
+//forEach
+// students.forEach(student=>{
+//     console.log(student)
+// })
+
+// //map
+// const modarr=students.map(student=>"abc")
+// console.log(modarr)
+// const modrr=students.map(student=>student.rollNo)
+// console.log(modrr)
+// const arrx=[36,48,19,43]
+// const modarrx=arrx.map(element=>element+5)
+// console.log(modarrx)
+
+
+//filter
+const filter_stud=students.filter(
+    dep=>dep.dept==="csm"
+)
+console.log(filter_stud)
+console.log(filter_stud.length)
+
+//reduce
+
+
+
+
+
+
+
