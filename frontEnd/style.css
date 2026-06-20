@@ -1,9 +1,11 @@
 div {
     text-align: center;
-    background-color: lightblue;
+    background-color: rgb(232, 232, 242);
 }
-.register-container,.login-container{
-    text-align: center;
-    background-color: yellow;
-    
+
+.login-container,
+.register-container {
+    /* background-color:lightblue;
+    text-align: center; */
+    width: 300px;
 }

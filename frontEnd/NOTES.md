@@ -1,0 +1,55 @@
+# JavaScript
+->it is a high-level,dynamically typed,loosely types,single-threaded,object-oriented,event driven programming language
+->javaScript is a scripting language
+->by deafult any browser supports javascript language
+
+->to compare just the values use ==
+   var a=10
+   var b="10"
+   console.log(a==b)--->true-->it is comparing only value
+->to compare accurately use ===
+     var a=10
+   var b="10"
+   console.log(a===b)--->false-->it is comparing both value and datatype
+## Variables
+    ->var
+    ->let
+    ->const
+**var**
+    var a=10
+    var a -->declaration
+    a=10  -->initialization
+    ->redeclaration and reinitialisation is possible
+    ->hoisting is possible(even before declaration of a variable if qwe try to perform an           operation it doesn't throw any error)like
+    console.log(name)
+    here we didn't even declare the variable name but it doesnt throw any error
+    ->var is a functional scope(if deckared var inside the funstion then we access that variable outside the function)
+    ->var is a not a block scope
+**let**
+    ->let is a block scope and functional scope but basically it is **block scope**
+    ->redeclaration is not possible but reinitialization is possible;
+**const**
+    ->it was intoduces in ES6
+    ->redclaration and reinitaialization is not possible
+    ->const is a functional scope and block scope but basically it is **block scope**
+    ->**that's why const is preferred**
+->>>Before ES6(2015) they used only var to create variables in javascript
+
+## Types of functions in javascript
+    ->Function declaration
+    ->function expression
+    ->arrow function
+    ->anonymous function
+**Arrow function**
+const backend=() =>{
+    console.log("Backend")
+}
+
+**Call back function**
+a function is acting like a parameter to the oter function
+**Higher order function**
+a function which is acting as a parameter to the higher order function
+
+
+
+
