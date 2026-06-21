@@ -74,9 +74,34 @@ a function which is acting as a parameter to the higher order function
     ->map()-->
     ->filter
 **transformation methods**
-    ->reduce
-    ->sort
+    ->reduce-->reduces array to a single value
+    ->sort-->sort method converts elemnts to strings and sorts
+        -->to avoid that we include arrow function
     ->reverse
+
+## DOM(Document Object Model)
+## Event handling
+    ->click event(onClick)
+    ->double click event(ondblClick)
+    ->mouse hiver event(onMouseOver)
+## React Js
+    ->React is an open source JavaScript library used for building fast,interactive,and reusable user interfaces developed by Meta platforms(Facebook) released in 2013
+    ->react allows developers to create modern web applications using reusable components
+
+**Features of react**
+->component based architecture
+->virtual DOM
+->JSX
+->one way data flow
+->reusable code
+->fast rendering
+**React supports Single Page Applications(SPA)**
+loads a single page and dynamically updates content without rerfreshing the entire page
+
+
+
+            
+                                    
 
 
 
