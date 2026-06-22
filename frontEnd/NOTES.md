@@ -118,6 +118,30 @@ virtual dom is a js representation of the real dom that react uses to track UI c
 ->html related code should be written inside return and js related code should be written above return in app.jsx
 
 
+
+## Prop Drilling
+
+## Hooks
+**most widely used hooks**
+->useState
+->useEffect
+->useContext
+
+**useState**
+it is a react hook used to create and manage state in a functional component
+-->const [state,setState]=useState(initialValue);
+            |      |
+  initial value  function
+
+**useEffect**
+->useEffect() is a react hook used to preform side effects in a component
+->used for API calls,timers,database,event listeners and local storage
+
+useEffect(()=>{
+},[]);
+
+**useContext**
+
             
                                     
 
