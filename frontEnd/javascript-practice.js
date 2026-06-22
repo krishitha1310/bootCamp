@@ -380,25 +380,25 @@
 
 
 
-let isColor = false
-let p = document.createElement("p")
-p.innerText = "Like"
-const container = document.getElementById("container")
-const paragraph = document.getElementById("paragraph")
-const heart = document.getElementById("heart")
-function heartColorChange() {
-    const heart = document.getElementById("heart")
-    if (isColor) {
-        heart.src = "https://media.istockphoto.com/id/1903985199/vector/heart-flat-icon.jpg?s=612x612&w=0&k=20&c=FOAQ1kofne38dLzm6C6vBE39nY9fynVBpQb7UcDW7gk="
-        isColor = false;
-        p.innerText = "dislike"
-    }
-    else {
-        heart.src = "https://www.clipartmax.com/png/middle/12-123476_lofty-design-heart-images-clip-art-clipart-outline-heart-shape-vector-free.png"
-        isColor = true;
-        p.innerText = "like"
-    }
-}
+// let isColor = false
+// let p = document.createElement("p")
+// p.innerText = "Like"
+// const container = document.getElementById("container")
+// const paragraph = document.getElementById("paragraph")
+// const heart = document.getElementById("heart")
+// function heartColorChange() {
+//     const heart = document.getElementById("heart")
+//     if (isColor) {
+//         heart.src = "https://media.istockphoto.com/id/1903985199/vector/heart-flat-icon.jpg?s=612x612&w=0&k=20&c=FOAQ1kofne38dLzm6C6vBE39nY9fynVBpQb7UcDW7gk="
+//         isColor = false;
+//         p.innerText = "dislike"
+//     }
+//     else {
+//         heart.src = "https://www.clipartmax.com/png/middle/12-123476_lofty-design-heart-images-clip-art-clipart-outline-heart-shape-vector-free.png"
+//         isColor = true;
+//         p.innerText = "like"
+//     }
+// }
 
 
 // let p=document.createElement("p")
