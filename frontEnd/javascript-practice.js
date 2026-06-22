@@ -378,8 +378,6 @@
 // console.log(lpa10)
 // lpa10.map(console.log(student=>student.name))
 
-
-
 let isColor = false
 let p = document.createElement("p")
 p.innerText = "Like"
@@ -398,25 +396,12 @@ function heartColorChange() {
         isColor = true;
         p.innerText = "like"
     }
-}
+} 
+
 
 
 // let p=document.createElement("p")
 // p.innerText="Like"
 // const container=document.getElementById("container")
 // container.appendChild(p)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

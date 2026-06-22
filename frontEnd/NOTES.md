@@ -97,7 +97,25 @@ a function which is acting as a parameter to the higher order function
 ->fast rendering
 **React supports Single Page Applications(SPA)**
 loads a single page and dynamically updates content without rerfreshing the entire page
+## **virtual DOM**
+virtual dom is a js representation of the real dom that react uses to track UI changes efficiently
+->react does not update the real dom directly
+->instead,it updates the virtual dom first
+->**Diffing** is the process of comparing the old virtual dom with new virtual dom to idenify the exact changes that need to be applied to the real dom
+->**Reconcillation** is the process by whickh react updates the real dom efficiently after diffing by applying only the necessary changes
 
+
+## (JSX)JavaScript Extensible Markup Language
+->jsx is a syntax extension for javascript that allows us to write html-like inside js
+->JSX is not HTML
+->it only looks like html ,behinf the scenes react converts jsx into js using Babel(js compiler)
+
+**JSX Rules**
+->one parent element  (only one return element if we want to return many elements then combine all those element into one div element)
+->clasaName instaed of class
+->JavaSript inside{}-->if we want to use js code in html then use {} like name is declared and initialized in js the in html to use name put it in {name}
+
+->html related code should be written inside return and js related code should be written above return in app.jsx
 
 
             
