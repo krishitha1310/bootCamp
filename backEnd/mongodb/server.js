@@ -1,5 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
+const { error } = require("node:console");
 
 const app = express();
 
@@ -9,7 +10,7 @@ mongoose.connect('mongodb://127.0.0.1:27017/studentDb')
 .then(() => {
     console.log("mongodb connected");
 
-    app.listen(3000, () => {
+    app.listen(3002, () => {
         console.log("Server running on port 3000");
     });
 })
@@ -44,14 +45,62 @@ app.post("/students", async (req, res) => {
     }
 });
 
-app.put('/students/:id',async(req,res)=>{
-    try{
-        const students=await Student.findByIdAndUpdate(
-            {id:req.body.params},
-            req.body,{new:true}
-        )
-        if(!student){
-            return res.status(404).json({message:"student not found"})
+app.put('/students/:id', async (req, res) => {
+    try {
+        const student = await Student.findByIdAndUpdate(
+            req.params.id,
+            req.body,
+            { new: true }
+        );
+        //await student.save();
+
+        if (!student) {
+            return res.status(404).json({
+                message: 'student not found'
+            });
         }
+
+        res.json({
+            message: 'student updated',
+            student
+        });
+
+    } catch (err) {
+        res.status(500).json({
+            error: err.message
+        });
     }
-})
+});
+
+app.get('/students', async (req, res) => {
+    try {
+        const students = await Student.find();
+
+        res.json({
+            count: students.length,
+            students
+        });
+    } catch (err) {
+        res.status(500).json({
+            error: err.message
+        });
+    }
+});
+
+// app.get('/students', (req, res) => {
+//     res.send('students route working');
+// });
+app.delete('/students/:id',async(req,res)=>{
+    try{
+        const student = await Student.findOneAndDelete({
+id:req.params.id
+
+        })
+        if(!student){
+            return res.status(404).json({message:'student not found'
+            })}
+        res.json({message:"student deleted"},student)
+    }catch (err)  {
+    res.status(500).json({error:err.message})
+    res.json({message:'student deleted',student})
+}})

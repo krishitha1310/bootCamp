@@ -36,7 +36,7 @@ app.get('/students', async (req, res) => {
 
         res.json({
             count: students.length,
-            students
+            students  
         });
     } catch (err) {
         res.status(500).json({
