@@ -2,7 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const { error } = require("node:console");
 
-const app = express();
+const app = express();  
 
 app.use(express.json());
 const cors=require("cors");
